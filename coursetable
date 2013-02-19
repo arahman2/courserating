@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS courseRatings;
+GRANT ALL PRIVILEGES ON courseRatings.* to 
+/**'alienuser33'@'localhost' identified by 'alien';
+**/
+USE courseRatings;
+CREATE TABLE ratings (
+  id int NOT NULL auto_increment,
+  name VARCHAR(25),
+  courseDate DATE,
+  courseName VARCHAR (25),
+  city VARCHAR(50),
+  state CHAR(2),
+  comments BLOB(150),
+  PRIMARY KEY (id)
+);
