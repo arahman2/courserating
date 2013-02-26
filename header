@@ -1,0 +1,32 @@
+
+<div class="header">
+  <div class="outernav">
+		<div class="nav">
+			<div class="innernav">
+				<ul>
+				
+					<!-- MENU -->
+					<li><a href="index.php">Home</a></li>
+					<li><a href="report.php">Rate a Course</a></li>
+					<li><a href="list.php">See Course Ratings</a></li>
+					<li><a href="#">Contact us</a></li>
+					<!-- END MENU -->
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+		
+	<div class="clear"></div>
+	
+	<div class="title">
+		<div class="innertitle">
+			
+			<!-- TITLE -->
+			<h1><a href="#">UMW Course Ratings</a></h1>
+			<h2>Ratings provided by current students and alumni</h2>
+			<!-- END TITLE -->
+			
+		</div>
+	</div>
+</div>
