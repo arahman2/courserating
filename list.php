@@ -14,7 +14,7 @@
 
 
 <div id="wrap">
-  <div class="pagewrapper">
+	<div class="pagewrapper">
 		<div class="innerpagewrapper">
 			<div class="page">
 				<div class="content">
@@ -43,7 +43,25 @@
 
 ?>
 </table>
+<table>		
+<tr><th>Professor</th><th>Comments</th></tr>
+<?php
+	include('dbconnect.php');
+	$query = "SELECT professor, comments FROM ratings ORDER BY professor";
+    $result = mysqli_query($db, $query)
+                         or die("Error Querying Database");
+    while($row = mysqli_fetch_array($result)) {
+  		$professor = $row['professor'];
+  		$comments = $row['comments'];
+  	echo "<tr><td>$professor</td><td>$comments</td></tr>\n";
+  }                 
+                         
+                         
+                         
+    mysqli_close($db);
 
+?>
+</table>
 
 					<!-- END CONTENT -->
 					
